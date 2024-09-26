@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="icon" href="images/library.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." id="search-input" />
+      <button type="submit">
+        <img src="images/search.png" alt="Search Icon" class="search-icon" />
+      </button>
+    </div>
+
+    <div id="book_container"></div>
+
+    <div class="pagentation">
+      <div class="prev-container">
+        <img src="images/previous.png" class="next-prev-icon" id="prev-icon" />
+        <span>Previous</span>
+      </div>
+      <div class="pages_number"></div>
+      <div class="next-container">
+        <img src="images/next.png" class="next-prev-icon" id="next-icon" />
+        <span>Next</span>
+      </div>
+    </div>
+  </body>
+</html>

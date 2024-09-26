@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+body{
+    background: url("images/img1.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#book_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(133, 88, 57,0.2);
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.book_card{
+    flex: 0 0 19%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+    height: 300px;
+    width: 20%;
+    border-radius: 20px;
+    background: url("images/img3.jpg");
+    overflow: hidden;
+        /* Prevents content overflow */
+        transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+.book_card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.book_card h2,
+.book_card p {
+    text-align: center;
+    color: #e0c49c;
+    font-family: "Playwrite DE Grund", cursive;
+    height: 30%;
+    padding-top: 5px;
+    
+}
+.book_card h2{
+    height: 40%;
+    margin-bottom: 20px;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px;
+    max-width: 400px;
+    margin-left: 5%;
+    background-color: #e0c49c;
+    margin-top: 20px;
+    
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+    background-color: #e0c49c;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 18px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.search-bar .search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.pagentation{
+    display: flex;
+    height: 100px;
+    padding-left: 30%;
+    background-color: rgba(133, 88, 57, 0.8);
+    border-radius: 10px;
+    
+}
+
+.pagentation-icon{
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.prev-container,.next-container{
+    margin-top: 25px;
+    height: 50%;
+    width: 100px;
+    box-sizing: border-box;
+}
+.pages_number{
+    margin-top: 25px;
+    display: inline-block;
+    display: flex;
+}
+.pagentation .pages_number .page-container{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.next-prev-icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.prev-container span,
+.next-container span{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+.pagentation-icon:hover,.next-prev-icon:hover{
+    cursor: pointer;
+}
+.pages_number span:hover,.prev-container span:hover,
+.next-container span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
